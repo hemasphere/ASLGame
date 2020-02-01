@@ -4,21 +4,24 @@
     <link rel="stylesheet" href="game.css">
     <meta charset="utf-8">
     <title> Sign Language Game</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   </head>
   <body>
     <p class = "moneysign">$<span id="countdown">300</span></p>
     <h2 class = "q3"> Question Three </h2>
-    <p class = "questionThree"> How do you say the letter A? </p>
+    <p class = "questionThree"> How do you say the letter R? </p>
     <div class = "container">
-      <!-- a -->
-    <button class = "btn" value = "a" onclick="handleAnswer(this.value)"><img src="https://4vector.com/i/free-vector-sign-language-a-clip-art_107904_Sign_Language_A_clip_art_hight.png" height = "80" width = "70"/></button>
-    <!-- f -->
-    <button class = "btn" value = "b" onclick="handleAnswer(this.value)"><img src="https://4vector.com/thumb_data/afd-108764.jpg" height = "90" width = "60"/> </button>
-    <!-- k -->
-    <button class = "btn" value = "c" onclick="handleAnswer(this.value)"><img src="https://4vector.com/thumb_data/afd-108724.jpg" height = "90" width = "60"/>  </button>
-    <!-- h -->
-    <button class = "btn" value = "d" onclick="handleAnswer(this.value)"><img src="https://4vector.com/thumb_data/afd-108762.jpg" height = "65" width = "90"/> </button>
+      <!-- m -->
+    <button type="button" class = "btn" value = "a" onclick="handleAnswerQ3(this.value)"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Sign_language_M.svg/1200px-Sign_language_M.svg.png" height = "80" width = "70"/></button>
+    <!-- r -->
+    <button type="button" class = "btn" value = "b" onclick="handleAnswerQ3(this.value)"><img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/Sign_language_R.svg" height = "90" width = "60"/> </button>
+    <!-- o -->
+    <button type="button" class = "btn" value = "c" onclick="handleAnswerQ3(this.value)"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Sign_language_O.svg/353px-Sign_language_O.svg.png" height = "90" width = "60"/>  </button>
+    <!-- q -->
+    <button type="button" class = "btn" value = "d" onclick="handleAnswerQ3(this.value)"><img src="https://webstockreview.net/images/fist-clipart-sign-language-5.png" height = "80" width = "70"/> </button>
   </div>
+  <a href = "q4.html"><button class = "next">Next</button></a>
+
   <script src="game.js"></script>
   </body>
 </html>
