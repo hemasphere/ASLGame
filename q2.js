@@ -6,9 +6,7 @@ var countdown = setInterval(function() {
 }, 1000);
 
 var score = 0;
-var t;
 
 function stopCount() {
-  t = setTimeout(timedCount, 1000);
-  clearTimeout(t);
+  clearInterval(seconds);
 }
