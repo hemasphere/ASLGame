@@ -21,7 +21,8 @@
   height: 150px;
   width: 150px;
   border-radius: 50%;
-  border-color: white;
+  border: transparent;
+  outline: none;
 }
 .img {
   margin-left: -30px;
