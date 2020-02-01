@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <link rel="stylesheet" href="q3.css">
+    <link rel="stylesheet" href="game.css">
     <meta charset="utf-8">
     <title> Sign Language Game</title>
   </head>
   <body>
+    <p class = "moneysign">$<span id="countdown">300</span></p>
     <h2 class = "q3"> Question Three </h2>
-    <p class = "questionOne"> How do you say the letter A? </p>
+    <p class = "questionThree"> How do you say the letter A? </p>
     <div class = "container">
-      <!-- goodbye -->
-    <button class = "btn"><img class = "img" src="https://www.babysignlanguage.com/signs/bye_bye.gif" height = "110" width = "130"/></button>
-    <!-- hello -->
-    <a href = "q4.html"><button class = "btn"><img class = "img" src="https://www.babysignlanguage.com/signs/hello.gif" height = "110" width = 130"/> </button></a>
-    <!-- good moring -->
-    <button class = "btn"><img class = "img" src="https://www.halseyschools.com/wordpress/wp-content/uploads/2016/07/good.gif" height = "110" width = "130"/>  </button>
-    <!-- good night -->
-    <button class = "btn"><img class = "img" src="https://www.babysignlanguage.com/signs/night.gif" height = "110" width = "130"/> </button>
+      <!-- a -->
+    <button class = "btn" value = "a" onclick="handleAnswer(this.value)"><img src="https://4vector.com/i/free-vector-sign-language-a-clip-art_107904_Sign_Language_A_clip_art_hight.png" height = "80" width = "70"/></button>
+    <!-- f -->
+    <button class = "btn" value = "b" onclick="handleAnswer(this.value)"><img src="https://4vector.com/thumb_data/afd-108764.jpg" height = "90" width = "60"/> </button>
+    <!-- k -->
+    <button class = "btn" value = "c" onclick="handleAnswer(this.value)"><img src="https://4vector.com/thumb_data/afd-108724.jpg" height = "90" width = "60"/>  </button>
+    <!-- h -->
+    <button class = "btn" value = "d" onclick="handleAnswer(this.value)"><img src="https://4vector.com/thumb_data/afd-108762.jpg" height = "65" width = "90"/> </button>
   </div>
+  <script src="game.js"></script>
   </body>
 </html>

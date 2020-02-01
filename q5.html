@@ -1,0 +1,24 @@
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="game.css">
+    <meta charset="utf-8">
+    <title> Sign Language Game</title>
+  </head>
+  <body>
+    <p class = "moneysign">$<span id="countdown">300</span></p>
+    <h2 class = "q5"> Question Five </h2>
+    <p class = "questionFive"> How do you say Hello? </p>
+    <div class = "container">
+      <!-- goodbye -->
+    <button class = "btn" value = "a" onclick="handleAnswer(this.value)"><img class = "img" src="https://www.babysignlanguage.com/signs/bye_bye.gif" height = "110" width = "130"/></button>
+    <!-- hello -->
+    <button class = "btn" value = "b" onclick="handleAnswer()"><img class = "img" src="https://www.babysignlanguage.com/signs/hello.gif" height = "110" width = "130"/> </button>
+    <!-- good moring -->
+    <button class = "btn" value = "c" onclick="handleAnswer()"><img class = "img" src="https://www.halseyschools.com/wordpress/wp-content/uploads/2016/07/good.gif" height = "110" width = "130"/></button>
+    <!-- good night -->
+    <button class = "btn" value = "d" onclick="handleAnswer()"><img class = "img" src="https://www.babysignlanguage.com/signs/night.gif" height = "110" width = "130"/> </button>
+  </div>
+  <script src="game.js"></script>
+  </body>
+</html>
+<!-- onclick="stopCount()" -->

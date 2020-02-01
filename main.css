@@ -1,0 +1,541 @@
+/*
+font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Blinker', sans-serif;
+*/
+
+/* SLIDE IN */
+/* -webkit-transition: all 1s ease;
+-moz-transition: all 1s ease;
+-o-transition: all 1s ease;
+-ms-transition: all 1s ease;
+transition: all 1s ease; */
+
+/*FADE IN*/
+/* animation: fadein 2s;
+-moz-animation: fadein 2s;
+-webkit-animation: fadein 2s;
+-o-animation: fadein 2s;  */
+.first
+{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+}
+.sectionBar
+{
+  display: grid;
+  grid-template-columns: auto;
+  background: #0F0E16;
+  padding-left: 120px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  animation: fadein 2s;
+  -moz-animation: fadein 2s;
+  -webkit-animation: fadein 2s;
+  -o-animation: fadein 2s;
+}
+.titleBar
+{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  top: 0px;
+  position: sticky;
+  animation: fadein 2s;
+  -moz-animation: fadein 2s;
+  -webkit-animation: fadein 2s;
+  -o-animation: fadein 2s;
+  z-index: 999;
+}
+.images
+{
+  height: auto;
+}
+.header
+{
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
+#mainHeader
+{
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  font-family: 'Roboto', sans-serif;
+}
+.defaultButtons
+{
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+}
+#webName
+{
+  grid-area: pbutton;
+  display: block;
+  width: 100%;
+  border: none;
+  padding: 20px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  background-color: #1b0221;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  border-bottom: solid white;
+  opacity: .9;
+}
+#webName:hover
+{
+  background-color: purple;
+}
+#aboutButton
+{
+  grid-area: abutton;
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: #1b0221;
+  padding: 20px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  border-bottom: solid white;
+  opacity: .9;
+}
+#aboutButton:hover
+{
+  background-color: purple;
+}
+#photosButton
+{
+  grid-area: pbutton;
+  display: block;
+  width: 100%;
+  border: none;
+  padding: 20px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  background-color: #1b0221;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  border-bottom: solid white;
+  opacity: .9;
+}
+#photosButton:hover
+{
+  background-color: purple;
+}
+#searchBox
+{
+  grid-area: pbutton;
+  display: block;
+  width: 100%;
+  border: none;
+  padding: 20px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  background-color: #1b0221;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  border-bottom: solid white;
+  opacity: .9;
+}
+#searchBox:hover
+{
+  background-color: purple;
+}
+.dropdown{
+ position: inline-block;
+}
+.dropdown-content{
+ display:none;
+ opacity: .9;
+ background-color: #1b0221;
+ min-width: 160px;
+ box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2) ;
+ z-index: 1000;
+ position:absolute;
+}
+/* links inside the dropdown */
+.dropdown-content a{
+ font-family: 'Oswald', sans-serif;
+ color: white;
+ text-align: center;
+ background: #1b0221;
+ padding: 20px 16px;
+ text-decoration: none;
+ display: block;
+}
+/* change color of dropdown links of hover */
+.dropdown-content a:hover
+{
+  opacity: .9;
+  background-color: purple;
+}
+/* show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display:block;
+  width: 25%;
+}
+/* chnage bkgrd color of dropdown button when dropdown content is shown */
+.dropdown:hover #searchBox {background-color: purple;}
+.paragraphGrid
+{
+  display: grid;
+  grid-template-columns: 3fr;
+  grid-template-rows: 3fr;
+  grid-row-gap: 50px;
+  grid-column-gap: 100px;
+  padding-top: 100px;
+  margin-bottom: 200px;
+  margin-left: 450px;
+  margin-right: 450px;
+  animation: fadein 2s;
+  -moz-animation: fadein 2s;
+  -webkit-animation: fadein 2s;
+  -o-animation: fadein 2s;
+}
+.paragraphGrid
+{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 3fr 3fr 3fr;
+  grid-row-gap: 50px;
+  grid-column-gap: 100px;
+  padding-top: 100px;
+  margin-bottom: 200px;
+  margin-left: 250px;
+  margin-right: 250px;
+  animation: fadein 2s;
+  -moz-animation: fadein 2s;
+  -webkit-animation: fadein 2s;
+  -o-animation: fadein 2s;
+}
+.paragraphs
+{
+  background-color: white;
+  box-shadow: 3px 3px 3px -3px lightgrey;
+  box-shadow: 1px 1px 3px 3px lightgrey;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  position: relative;
+  animation: textImage 2s;
+}
+.paragraphTitle
+{
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  font-family: 'Roboto', sans-serif;
+}
+.paragraphPassages
+{
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  line-height: 1.5;
+  padding-top: 10px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+a
+{
+}
+
+.blogInputGrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 100px;
+  padding-top: 50px;
+  margin-bottom: 200px;
+  margin-left: 75px;
+  margin-right: 25px;
+
+}
+
+.blogPostGrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 100px;
+  padding-top: 50px;
+  margin-bottom: 200px;
+  margin-left: 75px;
+  margin-right: 25px;
+
+}
+
+.instructions{
+text-align: center;
+padding-top: 20px;
+padding-bottom: 20px;
+color: black;
+font-family: 'Oswald', sans-serif;
+animation: fadein 2s;
+-moz-animation: fadein 2s;
+-webkit-animation: fadein 2s;
+-o-animation: fadein 2s;
+}
+
+.radioChoice{
+  display: grid;
+  font-size: 16px;
+  margin: auto;
+  text-align: center;
+  color: black;
+  font-family: 'Oswald', sans-serif;
+  animation: fadein 2s;
+  -moz-animation: fadein 2s;
+  -webkit-animation: fadein 2s;
+  -o-animation: fadein 2s;
+}
+
+.newPostHeaders{
+  display: grid;
+  grid-template-columns: 1fr, 1fr;
+  margin: auto;
+  text-align: center;
+  font-size: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: black;
+  font-family: 'Oswald', sans-serif;
+  animation: fadein 2s;
+  -moz-animation: fadein 2s;
+  -webkit-animation: fadein 2s;
+  -o-animation: fadein 2s;
+}
+
+.newPostInputs{
+  display: grid;
+  grid-template-columns: 1fr, 1fr;
+  margin: auto;
+  text-align: center;
+  font-size: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: black;
+  font-family: 'Oswald', sans-serif;
+  animation: fadein 2s;
+  -moz-animation: fadein 2s;
+  -webkit-animation: fadein 2s;
+  -o-animation: fadein 2s;
+}
+
+.commentPassage{
+  background-color: white;
+  box-shadow: 3px 3px 3px -3px lightgrey;
+  box-shadow: 1px 1px 3px 3px lightgrey;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#bI1
+{
+  grid-column-start: 1;
+  grid-row-start: 1;
+  grid-column-end: 2;
+}
+#bI2
+{
+  grid-column-start: 2;
+  grid-row-start: 1;
+  grid-column-end: 3;
+}
+#bI3
+{
+  grid-column-start: 3;
+  grid-row-start: 1;
+  grid-column-end: 4;
+}
+
+#bP1
+{
+  grid-column-start: 1;
+  grid-row-start: 1;
+  grid-column-end: 2;
+}
+#bP2
+{
+  grid-column-start: 2;
+  grid-row-start: 1;
+  grid-column-end: 3;
+}
+#bP3
+{
+  grid-column-start: 3;
+  grid-row-start: 1;
+  grid-column-end: 4;
+}
+
+#p1
+{
+  border-top: solid #29B5FD;
+  grid-column-start: 1;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+#p2
+{
+  border-top: solid #f24a41;
+  grid-column-start: 1;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+#p3
+{
+  border-top: solid #00CC6E;
+  grid-column-start: 1;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+#i1
+{
+  grid-column-start: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  background: url('https://macaulay.cuny.edu/wp-content/uploads/2016/07/qc10_bg_000056-1920x1080.jpg');
+  background-size: cover;
+  position: relative;
+  animation: textImage 2s;
+}
+#i2
+{
+  grid-column-start: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background: url('https://macaulay.cuny.edu/wp-content/uploads/2016/07/qc10_bg_000056-1920x1080.jpg');
+  background-size: cover;
+  position: relative;
+  animation: textImage 2s;
+}
+#i3
+{
+  grid-column-start: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  background: url('https://macaulay.cuny.edu/wp-content/uploads/2016/07/qc10_bg_000056-1920x1080.jpg');
+  background-size: cover;
+  position: relative;
+  animation: textImage 2s;
+}
+#content
+{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 400px;
+  position: relative;
+}
+#digitalImage
+{
+  grid-column-start: 1;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  background: url('https://images.wallpaperscraft.com/image/forest_fog_mountains_145426_2048x1152.jpg');
+  position: relative;
+  top: 0;
+  transition: top ease 0.5s;
+  opacity    : 0.6;
+}
+#digitalImage:hover
+{
+  opacity    : 1;
+  top: -50px;
+}
+#learningImage
+{
+  grid-column-start: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  background: url('https://images.wallpaperscraft.com/image/forest_fog_mountains_145426_2048x1152.jpg');
+  position: relative;
+  top: 0;
+  transition: top ease 0.5s;
+  opacity    : 0.6;
+}
+#learningImage:hover
+{
+  opacity    : 1;
+  top: -50px;
+}
+#pollutionImage
+{
+  grid-column-start: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  background: url('https://images.wallpaperscraft.com/image/forest_fog_mountains_145426_2048x1152.jpg');
+  position: relative;
+  top: 0;
+  transition: top ease 0.5s;
+  opacity    : 0.6;
+
+}
+#pollutionImage:hover
+{
+  opacity    : 1;
+  top: -50px;
+}
+
+#contribute{
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: auto;
+  text-align: center;
+  font-size: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  background-color: black;
+  box-shadow: 3px 3px 3px -3px lightgrey;
+  box-shadow: 1px 1px 3px 3px lightgrey;
+  margin-left: 600px;
+  margin-right: 600px;
+  font-family: 'Oswald', sans-serif;
+  animation: fadein 2s;
+  -moz-animation: fadein 2s;
+  -webkit-animation: fadein 2s;
+  -o-animation: fadein 2s;
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes textImage {
+  from {top: -200px;}
+  to {top: 0px;}
+}

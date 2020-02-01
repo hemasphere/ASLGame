@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <link rel="stylesheet" href="q1.css">
+    <link rel="stylesheet" href="game.css">
     <meta charset="utf-8">
     <title> Sign Language Game</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   </head>
   <body>
     <p class = "moneysign">$<span id="countdown">300</span></p>
@@ -11,14 +12,14 @@
     <p class = "questionOne"> How do you say the letter A? </p>
     <div class = "container">
       <!-- a -->
-    <a href = "q2.html"><button class = "btn"><img src="https://4vector.com/i/free-vector-sign-language-a-clip-art_107904_Sign_Language_A_clip_art_hight.png" height = "80" width = "70"/></button></a>
+    <button type="button" class = "btn" value = "a" onclick="handleAnswer(this.value)"><img src="https://4vector.com/i/free-vector-sign-language-a-clip-art_107904_Sign_Language_A_clip_art_hight.png" height = "80" width = "70"/></button>
     <!-- f -->
-    <a href = "q2.html"><button class = "btn"><img src="https://4vector.com/thumb_data/afd-108764.jpg" height = "90" width = "60"/> </button></a>
+    <button type="button" class = "btn" value = "b" onclick="handleAnswer(this.value)"><img src="https://i.ya-webdesign.com/images/quiet-clipart-sign-language-14.png" height = "90" width = "60"/> </button>
     <!-- k -->
-    <a href = "q2.html"><button class = "btn"><img src="https://4vector.com/thumb_data/afd-108724.jpg" height = "90" width = "60"/>  </button></a>
-    <!-- h -->
-    <a href = "q2.html"><button class = "btn"><img src="https://4vector.com/thumb_data/afd-108762.jpg" height = "65" width = "90"/> </button></a>
+    <button type="button" class = "btn" value = "c" onclick="handleAnswer(this.value)"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Sign_language_K.svg/567px-Sign_language_K.svg.png" height = "90" width = "60"/>  </button>
+    <!-- s -->
+    <button type="button" class = "btn" value = "d" onclick="handleAnswer(this.value)"><img src="https://i.pinimg.com/originals/2a/2c/20/2a2c20cc226cd196a4b1b839199c196c.png" height = "80" width = "70"/> </button>
   </div>
-  <script src="q1.js"></script>
+  <script src="game.js"></script>
   </body>
 </html>

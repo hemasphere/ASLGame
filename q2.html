@@ -1,24 +1,25 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <link rel="stylesheet" href="q2.css">
+    <link rel="stylesheet" href="game.css">
     <meta charset="utf-8">
     <title> Sign Language Game</title>
   </head>
   <body>
-    <p class = "moneysign">$<span id="countdown">300</span></p>
+    <p class = "moneysign">$<span id="countdown">500</span></p>
     <h2 class = "q2"> Question Two </h2>
     <p class = "questionTwo"> How do you say Hello? </p>
     <div class = "container">
       <!-- goodbye -->
-    <button class = "btn"><img class = "img" src="https://www.babysignlanguage.com/signs/bye_bye.gif" height = "110" width = "130"/></button>
+    <button type="button" class = "btn" value = "a" onclick="handleAnswer(this.value)"><img class = "img" src="https://www.babysignlanguage.com/signs/bye_bye.gif" height = "110" width = "130"/></button>
     <!-- hello -->
-    <a href = "q3.html"><button class = "btn"><img class = "img" src="https://www.babysignlanguage.com/signs/hello.gif" height = "110" width = "130"/> </button></a>
+    <<button type="button" class = "btn" value = "b" onclick="handleAnswer(this.value)"><img class = "img" src="https://www.babysignlanguage.com/signs/hello.gif" height = "110" width = "130"/> </button>
     <!-- good moring -->
-    <button class = "btn" onclick="stopCount()"><img class = "img" src="https://www.halseyschools.com/wordpress/wp-content/uploads/2016/07/good.gif" height = "110" width = "130"/>  </button>
+    <button type="button" class = "btn" value = "c" onclick="handleAnswer(this.value)"><img class = "img" src="https://www.halseyschools.com/wordpress/wp-content/uploads/2016/07/good.gif" height = "110" width = "130"/></button>
     <!-- good night -->
-    <button class = "btn"><img class = "img" src="https://www.babysignlanguage.com/signs/night.gif" height = "110" width = "130"/> </button>
+    <button type="button" class = "btn" value = "d" onclick="handleAnswer(this.value)"><img class = "img" src="https://www.babysignlanguage.com/signs/night.gif" height = "110" width = "130"/> </button>
   </div>
-  <script src="q2.js"></script>
+  <script src="game.js"></script>
   </body>
 </html>
+<!-- onclick="stopCount()" -->
