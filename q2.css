@@ -1,0 +1,36 @@
+.q2 {
+}
+
+.questionTwo {
+  font-size: 28px;
+  font-style: italic;
+  color: blue;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 10px;
+  padding: 20px;
+}
+
+.btn {
+  padding: 30px;
+  font-size: 30px;
+  padding-bottom: 30px;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  border-color: white;
+}
+.img {
+  margin-left: -30px;
+}
+
+#countdown {
+  font-size: 30px;
+}
+
+.moneysign {
+  font-size: 30px;
+}

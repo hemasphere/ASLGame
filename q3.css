@@ -1,8 +1,8 @@
-.q1 {
+.q3 {
   text-align: center;
 }
 
-.questionOne {
+.questionThree {
   font-size: 28px;
   font-style: italic;
   color: blue;
@@ -11,8 +11,8 @@
 .container {
   display: grid;
   grid-template-columns: auto auto;
-  /* grid-gap: 10px; */
-  /* padding: 20px; */
+  grid-gap: 10px;
+  padding: 20px;
 }
 
 .btn {
@@ -23,4 +23,7 @@
   width: 150px;
   border-radius: 50%;
   border-color: white;
+}
+.img {
+  margin-left: -30px;
 }
