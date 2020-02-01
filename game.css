@@ -1,0 +1,22 @@
+.q1 {
+  text-align: center;
+}
+
+.questionOne {
+  font-size: 28px;
+  font-style: italic;
+  color: blue;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 30px;
+  padding: 20px;
+}
+
+.btn {
+  padding: 30px;
+  font-size: 30px;
+  padding-bottom: 30px;
+}
