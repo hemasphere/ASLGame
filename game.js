@@ -1,3 +1,14 @@
+// // Add a new document in collection "users"
+// db.collection("users").doc("userUid").set({
+//     score:
+// })
+// .then(function() {
+//     console.log("Document successfully written!");
+// })
+// .catch(function(error) {
+//     console.error("Error writing document: ", error);
+// });
+
 var score = parseInt(localStorage.getItem("score") || "0");
 console.log(score);
 //   console.log(score);

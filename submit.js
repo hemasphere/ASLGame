@@ -11,7 +11,7 @@ var firebaseConfig = {
 
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
-//firebase.analytics();
+firebase.analytics();
 
 var messagesRef = firebase.database().ref('test2');
 
@@ -38,12 +38,12 @@ function signup(){
     last_name: userLast
   });
 
-  .catch(function(error) {
-    // Handle Errors here.
-    var errorCode = error.code;
-    var errorMessage = error.message;
-    // ...
-  });
+  // .catch(function(error) {
+  //   // Handle Errors here.
+  //   var errorCode = error.code;
+  //   var errorMessage = error.message;
+  //   // ...
+  // });
 
   firebase.auth().createUserWithEmailAndPassword(userEmail, userPassword).catch(function(error) {
   // Handle Errors here.
@@ -51,7 +51,7 @@ function signup(){
   var errorMessage = error.message;
   console.log(errorMessage, errorCode);
 
-}).then(function(user){
+}).then(function(){window.location = "q1.html"});
 
   // const userUid = userName.uid;
   // const account = {
@@ -61,7 +61,6 @@ function signup(){
   //   firebase.firestore().collection('accounts').doc(userUid).set(account);
   // })
 
-  window.location = "q1.html"});
 
 }
 
