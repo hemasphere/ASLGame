@@ -24,7 +24,7 @@ function saveMessage(){
   });
 }
 
-function signup (){
+function signup(){
 
   var userEmail = document.getElementById("email_field").value;
   var userPassword = document.getElementById("password").value;
@@ -53,19 +53,19 @@ function signup (){
 
 }).then(function(user){
 
-  const userUid = userName.uid;
-  const account = {
-      useruid: userUid,
-      calendarEvents: []
-    }
-    firebase.firestore().collection('accounts').doc(userUid).set(account);
-  })
+  // const userUid = userName.uid;
+  // const account = {
+  //     useruid: userUid,
+  //     calendarEvents: []
+  //   }
+  //   firebase.firestore().collection('accounts').doc(userUid).set(account);
+  // })
 
   window.location = "q1.html"});
 
 }
 
-function login (){
+function login(){
 
   var userName = document.getElementById("username").value;
   var userEmail = document.getElementById("email_field").value;
