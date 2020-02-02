@@ -38,13 +38,30 @@ function signup (){
     last_name: userLast
   });
 
+  .catch(function(error) {
+    // Handle Errors here.
+    var errorCode = error.code;
+    var errorMessage = error.message;
+    // ...
+  });
+
   firebase.auth().createUserWithEmailAndPassword(userEmail, userPassword).catch(function(error) {
   // Handle Errors here.
   var errorCode = error.code;
   var errorMessage = error.message;
   console.log(errorMessage, errorCode);
 
-}).then(function(){window.location = "q1.html"});
+}).then(function(user){
+
+  const userUid = userName.uid;
+  const account = {
+      useruid: userUid,
+      calendarEvents: []
+    }
+    firebase.firestore().collection('accounts').doc(userUid).set(account);
+  })
+
+  window.location = "q1.html"});
 
 }
 
