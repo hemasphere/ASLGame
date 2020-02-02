@@ -1,10 +1,12 @@
 body{
-  background-color:  #6699ff;
+  /* background-color:  #668cff; */
+  background-color: #002266;
+
 }
 .questionOne {
   font-size: 24px;
   font-style: Helvetica;
-  color: black;
+  color: white;
 }
 
 .questionTwo {
@@ -51,16 +53,16 @@ body{
 }
 
 .btn:hover {
-  background: #80aaff
+  background:  #4d88ff;
 }
 
 /* button highlight on click */
 .active{
-  background-color: #00ff00;
+  background-color: #5cd65c;
 }
 
 .wrongActive {
-  background-color: #ff0000;
+  background-color: #ff3333;
 }
 
 .img {
@@ -70,11 +72,13 @@ body{
 
 
 #countdown {
-  font-size: 30px;
+  font-size: 38px;
+  color: white;
 }
 
 .moneysign {
-  font-size: 30px;
+  font-size: 38px;
+  color: white;
 }
 
 .next{
@@ -87,7 +91,7 @@ body{
 }
 
 .next:hover {
-  background: #80aaff
+  background:  #4d88ff;
 }
 
 .showAnswers{
@@ -101,12 +105,13 @@ body{
 }
 
 .showAnswers:hover {
-  background: #80aaff
+  background:  #4d88ff;
 }
 
 #content {
   text-align: center;
   margin-top: 60px;
+  color: white;
 }
 
 .resulthead {
@@ -120,7 +125,7 @@ body{
   height: 300px;
   float: left;
   padding: 10px;
-
+  margin-left: 60px;
 }
 
 .aboutus{
@@ -130,4 +135,5 @@ body{
   height: 340px;
   float: right;
   padding: 10px;
+  margin-right: 60px;
 }
