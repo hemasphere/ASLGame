@@ -1,22 +1,37 @@
-// // Add a new document in collection "users"
-// db.collection("users").doc("userUid").set({
-//     score:
-// })
-// .then(function() {
-//     console.log("Document successfully written!");
-// })
-// .catch(function(error) {
-//     console.error("Error writing document: ", error);
-// });
+
+/*
+1)
+*/
+
+function framework(data) {
+  var user = firebase.auth().currentUser;
+
+  if (user) {
+    console.log("User is signed in.");
+  } else {
+    console.log("User is not signed in.");
+  }
+
+  //  Add a new document in collection "users"
+   db.collection("accounts").doc(user.uid).set(data).then(function() {
+      console.log("Document successfully written!");
+   })
+   .catch(function(error) {
+      console.error("Error writing document: ", error);
+  });
+
+}
 
 var score = parseInt(localStorage.getItem("score") || "0");
+framework(score);
 console.log(score);
 //   console.log(score);
 // }
+
 if(document.getElementById("score")) {
   document.getElementById("score").textContent = score;
 }
-else{
+else {
   var seconds = parseInt(document.getElementById("countdown").textContent);
   var countdown = setInterval(function() {
       seconds = seconds - 20;
@@ -30,7 +45,7 @@ function handleAnswerQ1(answer) {
   if(answer === "a"){
     clearInterval(countdown);
     score += seconds;
-    localStorage.setItem("score", ''+score);
+    localStorage.setItem("score", ''+ score);
     seconds = 0;
     $(document).ready(function () {
     	$('button').on('click', function() {
@@ -70,7 +85,7 @@ function handleAnswerQ2(answer) {
     document.getElementById("countdown").innerHTML = "0";
     $(document).ready(function () {
     	$('button').on('click', function() {
-        $('button').removeClass('wrongActive');
+        $('button').removeClass('wrongAc   tive');
         $(this).addClass('wrongActive');
       });
     });

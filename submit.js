@@ -38,33 +38,19 @@ function signup(){
     last_name: userLast
   });
 
-  // .catch(function(error) {
-  //   // Handle Errors here.
-  //   var errorCode = error.code;
-  //   var errorMessage = error.message;
-  //   // ...
-  // });
-
   firebase.auth().createUserWithEmailAndPassword(userEmail, userPassword).catch(function(error) {
   // Handle Errors here.
   var errorCode = error.code;
   var errorMessage = error.message;
   console.log(errorMessage, errorCode);
-
-}).then(function(){window.location = "q1.html"});
-
-  // const userUid = userName.uid;
-  // const account = {
-  //     useruid: userUid,
-  //     calendarEvents: []
-  //   }
-  //   firebase.firestore().collection('accounts').doc(userUid).set(account);
-  // })
-
-
+  }).then(function(user){
+    const userUid = user.uid;
+    const account = { uid: userUid }
+    firebase.firestore().collection('accounts').doc(userUid).set(account);
+    window.location = "q1.html"});
 }
 
-function login(){
+function login() {
 
   var userName = document.getElementById("username").value;
   var userEmail = document.getElementById("email_field").value;
@@ -77,6 +63,11 @@ function login(){
   var errorCode = error.code;
   var errorMessage = error.message;
   console.log(errorMessage, errorCode);
-  }).then(function(){window.location = "q1.html"});
+  }).then(function(users){
+    const userUid = userName.uid;
+    const account = {useruid: userUid, calendarEvents: []
+}
+    firebase.firestore().collection('accounts').doc(userUid).set(account);
+    window.location = "q1.html"});
 
 }
