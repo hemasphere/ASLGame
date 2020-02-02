@@ -4,30 +4,24 @@
     <link rel="stylesheet" href="game.css">
     <meta charset="utf-8">
     <title> Sign Language Game</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   </head>
-  <script type = "text/javascript">
-    localStorage.setItem("score", "0");
-</script>
-  <body onload = "restart()">
-    <p class = "moneysign">$<span id="countdown">300</span></p>
+  <body>
     <p class = "questionOne"><strong>Question One </strong><br> How do you say the letter A? </p>
     <div class = "container">
       <!-- a -->
-    <button type="button" class = "btn" value = "a" onclick="handleAnswerQ1(this.value)"><img src="a.png" height = "80" width = "70"/></button>
-    <!-- <div id = "content"> This is how you demonstate A </div> -->
+    <button type="button" class = "btn" value = "a" onclick="handleAnswerQ1(this.value)" onclick = "myFunction()"><img src="a.png" height = "80" width = "70"/></button>
+    <div id = "content"> This is how you demonstate A </div>
     <!-- f -->
     <button type="button" class = "btn" value = "b" onclick="handleAnswerQ1(this.value)"><img src="f.png" height = "90" width = "60"/> </button>
-    <!-- <div id = "content"> This is how you demonstate F </div> -->
+    <div id = "content"> This is how you demonstate F </div>
     <!-- k -->
     <button type="button" class = "btn" value = "c" onclick="handleAnswerQ1(this.value)"><img src="k.png" height = "90" width = "60"/>  </button>
-    <!-- <div id = "content"> This is how you demonstate K </div> -->
+    <div id = "content"> This is how you demonstate K </div>
     <!-- s -->
     <button type="button" class = "btn" value = "d" onclick="handleAnswerQ1(this.value)"><img src="s.png" height = "80" width = "70"/> </button>
-    <!-- <div id = "content"> This is how you demonstate S </div> -->
+    <div id = "content"> This is how you demonstate S </div>
   </div>
   <a href = "q2.html"><button class = "next">Next</button></a>
-  <a href = "q1answers.html"><button class = "showAnswers"> Show Answers </button></a>
 
   <script src="game.js"></script>
   </body>

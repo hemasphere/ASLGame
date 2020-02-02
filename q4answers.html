@@ -3,23 +3,24 @@
     <link rel="stylesheet" href="game.css">
     <meta charset="utf-8">
     <title> Sign Language Game</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   </head>
   <body>
-    <p class = "moneysign">$<span id="countdown">500</span></p>
     <p class = "questionFour"><strong>Question Four </strong><br> How do you say Hello? </p>
     <div class = "container">
       <!-- goodbye -->
     <button type="button" class = "btn" value = "a" onclick="handleAnswerQ4(this.value)"><img class = "img" src="goodbye.gif" height = "90" width = "102"/></button>
+    <div id = "content"> This is how you demonstate Good Bye </div>
     <!-- hello -->
     <button type="button" class = "btn" value = "b" onclick="handleAnswerQ4(this.value)"><img class = "img" src="hello.gif" height = "90" width = "102"/> </button>
+    <div id = "content"> This is how you demonstate Hello </div>
     <!-- good moring -->
     <button type="button" class = "btn" value = "c" onclick="handleAnswerQ4(this.value)"><img class = "img" src="goodmorning.gif" height = "90" width = "102"/>  </button>
+    <div id = "content"> This is how you demonstate Good Morning </div>
     <!-- good night -->
     <button type="button" class = "btn" value = "d" onclick="handleAnswerQ4(this.value)"><img class = "img" src="goodnight.gif" height = "90" width = "102"/> </button>
-  </div>
+    <div id = "content"> This is how you demonstate Good Night </div>
+</div>
   <a href = "q5.html"><button class = "next">Next</button></a>
-  <a href = "q4answers.html"><button class = "showAnswers"> Show Answers </button></a>
   <script src="game.js"></script>
   </body>
 </html>

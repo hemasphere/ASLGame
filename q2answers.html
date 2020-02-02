@@ -4,23 +4,25 @@
     <link rel="stylesheet" href="game.css">
     <meta charset="utf-8">
     <title> Sign Language Game</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   </head>
   <body>
-    <p class = "moneysign">$<span id="countdown">300</span></p>
     <p class = "questionTwo"><strong>Question Two </strong><br> How do you say the letter G? </p>
     <div class = "container">
       <!-- w -->
     <button type="button" class = "btn" value = "a" onclick="handleAnswerQ2(this.value)"><img src="w.png" height = "80" width = "70"/></button>
+    <div id = "content"> This is how you demonstate W </div>
     <!-- d -->
     <button type="button" class = "btn" value = "b" onclick="handleAnswerQ2(this.value)"><img src="d.png" height = "90" width = "60"/> </button>
+    <div id = "content"> This is how you demonstate D </div>
     <!-- g -->
     <button type="button" class = "btn" value = "c" onclick="handleAnswerQ2(this.value)"><img src="g.png" height = "70" width = "100"/>  </button>
+    <div id = "content"> This is how you demonstate G </div>
     <!-- t -->
     <button type="button" class = "btn" value = "d" onclick="handleAnswerQ2(this.value)"><img src="t.png" height = "80" width = "70"/> </button>
+    <div id = "content"> This is how you demonstate T </div>
   </div>
   <a href = "q3.html"><button class = "next">Next</button></a>
-  <a href = "q2answers.html"><button class = "showAnswers"> Show Answers </button></a>
+
   <script src="game.js"></script>
   </body>
 </html>

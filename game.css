@@ -1,53 +1,41 @@
-.q1 {
+body{
+  background-color:  #6699ff
+;
 }
-
 .questionOne {
-  font-size: 28px;
-  font-style: italic;
-  color: blue;
-}
-
-.q2 {
+  font-size: 24px;
+  font-style: Helvetica;
+  color: black;
 }
 
 .questionTwo {
-  font-size: 28px;
-  font-style: italic;
-  color: blue;
-}
-
-.q3 {
+  font-size: 24px;
+  font-style: Helvetica;
+  color: black;
 }
 
 .questionThree {
-  font-size: 28px;
-  font-style: italic;
-  color: blue;
-}
-
-.q4 {
+  font-size: 24px;
+  font-style: Helvetica;
+  color: black;
 }
 
 .questionFour {
-  font-size: 28px;
-  font-style: italic;
-  color: blue;
-}
-
-.q5 {
+  font-size: 24px;
+  font-style: Helvetica;
+  color: black;
 }
 
 .questionFive {
-  font-size: 28px;
-  font-style: italic;
-  color: blue;
+  font-size: 24px;
+  font-style: Helvetica;
+  color: black;
 }
 
 .container {
   display: grid;
   grid-template-columns: auto auto;
-  grid-gap: 10px;
-  padding: 20px;
+  /* padding: 20px; */
 }
 
 .btn {
@@ -60,6 +48,11 @@
   border-radius: 50%;
   border: transparent;
   outline: none;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  background: #80aaff
 }
 
 /* button highlight on click */
@@ -72,7 +65,7 @@
 }
 
 .img {
-  margin-left: -20px;
+  margin-left: -10px;
   margin-right: auto;
 }
 
@@ -86,9 +79,56 @@
 }
 
 .next{
-  font-size: 30px;
+  font-size: 25px;
   border-radius: 18px;
   border: 1px solid black;
   outline: none;
+  padding: 18px;
+  margin-top: 10px;
+}
+
+.next:hover {
+  background: #80aaff
+}
+
+.showAnswers{
+  font-size: 25px;
+  border-radius: 18px;
+  border: 1px solid black;
+  outline: none;
+  padding: 18px;
+  margin-left: 410px;
+  margin-top: 10px;
+}
+
+.showAnswers:hover {
+  background: #80aaff
+}
+
+#content {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.resulthead {
+  margin-top: 20px;
+}
+
+.resultp{
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 200px;
+  height: 300px;
+  float: left;
+  padding: 10px;
+
+}
+
+.aboutus{
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 240px;
+  height: 340px;
+  float: right;
   padding: 10px;
 }
