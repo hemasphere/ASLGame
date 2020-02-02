@@ -1,10 +1,3 @@
-var seconds = document.getElementById("countdown").textContent;
-var countdown = setInterval(function() {
-    seconds = seconds - 20;
-    document.getElementById("countdown").textContent = seconds;
-    if (seconds <= 0) clearInterval(countdown);
-}, 1000);
-
 var score = parseInt(localStorage.getItem("score") || "0");
 console.log(score);
 //   console.log(score);
@@ -21,12 +14,6 @@ else{
   }, 1000);
 }
 
-//fc to restart Score
-
-function restart(){
-  console.log("hello");
-  localStorage.setItem("score", "0");
-}
 //function for Question one
 function handleAnswerQ1(answer) {
   if(answer === "a"){
